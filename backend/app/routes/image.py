@@ -14,7 +14,7 @@ async def upload_zip_images(file: UploadFile = File(...), model: str = Form("hel
     
     total_ok = 0
     total_fail = 0
-    total_no_det = 0  # <--- IL MANQUAIT CETTE INITIALISATION
+    total_no_det = 0 
 
     with zipfile.ZipFile(output_buffer, "w") as output_zip:
         for file_name in input_zip.namelist():
@@ -23,7 +23,7 @@ async def upload_zip_images(file: UploadFile = File(...), model: str = Form("hel
                     result = detect_image_to_bytes(image_file.read(), model)
                     total_ok += result["ok"]
                     total_fail += result["fail"]
-                    total_no_det += result["no_detection"] # Maintenant c'est OK
+                    total_no_det += result["no_detection"]
                     output_zip.writestr(f"det_{file_name}", result["image_bytes"])
 
     output_buffer.seek(0)
@@ -35,6 +35,6 @@ async def upload_zip_images(file: UploadFile = File(...), model: str = Form("hel
             "X-Total-OK": str(total_ok),
             "X-Total-Fail": str(total_fail),
             "X-Total-No-Det": str(total_no_det),
-            "Access-Control-Expose-Headers": "X-Total-OK, X-Total-Fail, X-Total-No-Det" # Crucial pour le Frontend
+            "Access-Control-Expose-Headers": "X-Total-OK, X-Total-Fail, X-Total-No-Det"
         } 
     )

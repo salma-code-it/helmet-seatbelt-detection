@@ -158,7 +158,7 @@ function Upload({ url, type, model, onStatsUpdate, onAddHistory }) {
           annotatedImages.map((img, idx) => (
             <div key={idx} className="result-card-wrapper">
               <img src={img.url} alt="res" />
-              <div className="result-img-badge">{img.name.replace("annotated_", "")}</div>
+              {/* <div className="result-img-badge">{img.name.replace("annotated_", "")}</div> */}
             </div>
           ))
         ) : (

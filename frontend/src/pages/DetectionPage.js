@@ -3,7 +3,7 @@ import Upload from "../components/Upload";
 
 const MODELS = [
   { id: "helmet", icon: "🪖", label: "Modèle Casque", tags: ["helmet", "no_helmet"], imageUrl: "http://127.0.0.1:8000/image/upload-zip", videoUrl: "http://127.0.0.1:8000/video/upload" },
-  { id: "belt", icon: "🦺", label: "Modèle Ceinture", tags: ["seatbelt", "no_seatbelt"], imageUrl: "http://127.0.0.1:8000/image/upload-zip", videoUrl: "http://127.0.0.1:8000/video/upload" },
+  { id: "belt", icon: " 🛡️", label: "Modèle Ceinture", tags: ["seatbelt", "no_seatbelt"], imageUrl: "http://127.0.0.1:8000/image/upload-zip", videoUrl: "http://127.0.0.1:8000/video/upload" },
 ];
 
 function DetectionPage({ stats, setStats ,onAddHistory}) {
