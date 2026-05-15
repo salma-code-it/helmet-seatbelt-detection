@@ -1,11 +1,11 @@
-# 🪖 SafetyVision - Détection EPI par Deep Learning
+# SafetyVision - Détection EPI par Deep Learning
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-111F68?style=for-the-badge&logo=yolo&logoColor=white)](https://ultralytics.com/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
 
-## 📋 Table des matières
+## Table des matières
 - [Vue d'ensemble](#vue-densemble)
 - [Architecture technique](#architecture-technique)
 - [Backend (FastAPI + YOLOv8)](#backend-fastapi--yolov8)
@@ -16,7 +16,7 @@
 
 ---
 
-## 🎯 Vue d'ensemble
+## Vue d'ensemble
 
 **SafetyVision** est une plateforme intelligente de surveillance industrielle utilisant le **deep learning** pour la détection automatique des Équipements de Protection Individuelle (EPI) : casques de sécurité et ceintures/harnais anti-chute.
 
@@ -195,7 +195,7 @@ useEffect(() => {
 }
 ```
 
-# 🚀 Installation & Déploiement
+# Installation & Déploiement
 
 ## Prérequis
 
@@ -266,7 +266,7 @@ file: <vidéo .mp4>
 Body: <vidéo annotée .mp4 (H.264)>
 ```
 
-# ⭐ Fonctionnalités clés
+# Fonctionnalités clés
 
 | Feature | Description | Tech Stack |
 |--------|-------------|------------|
@@ -279,23 +279,23 @@ Body: <vidéo annotée .mp4 (H.264)>
 
 # 📊 Pages de l'application
 
-## 🏠 HomePage
+## HomePage
 - Hero section avec statistiques clés
 - Présentation des deux modèles
 - Call-to-action vers la détection
 
-## 🔍 DetectionPage
+## DetectionPage
 - Sélection du modèle
 - Choix du format
 - Zone de drop/upload
 - Visualisation des résultats
 
-## 📋 HistoryPage
+## HistoryPage
 - Tableau historique
 - Colonnes : Date, Modèle, Type, Total, OK, FAIL
 - Persistance localStorage
 
-## 📈 AnalyticsPage
+## AnalyticsPage
 - KPI Cards
 - Courbe de Danger
 - PieChart des erreurs
@@ -319,14 +319,14 @@ Body: <vidéo annotée .mp4 (H.264)>
 - Alertes d'erreur
 - Badges de statut
 
-# 🔒 Sécurité & Performance
+# Sécurité & Performance
 
 - CORS configuré pour localhost:3000
 - Headers exposés
 - Streaming mémoire
 - FFmpeg H.264 optimisé
 
-# 🛠️ Technologies utilisées
+# Technologies utilisées
 
 ## Backend
 - FastAPI 0.104.1
@@ -341,7 +341,7 @@ Body: <vidéo annotée .mp4 (H.264)>
 - JSZip
 - CSS3
 
-# 📝 Notes de développement
+# Notes de développement
 
 ## Cas particuliers
 - Aucune détection → annotation orange
