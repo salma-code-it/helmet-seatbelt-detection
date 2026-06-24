@@ -31,10 +31,9 @@ The application consists of:
 - **YOLOv8 models** for helmet and safety-belt detection.
 - OpenCV and FFmpeg for annotation and video processing.
 
----
-
 ## Backend Structure
 
+```text
 backend/
 ├── main.py              # FastAPI entry point + CORS configuration
 ├── requirements.txt     # Python dependencies
@@ -47,7 +46,7 @@ backend/
 └── models/
     ├── best_casque.pt   # Helmet detection model (YOLOv8)
     └── best_ceinture.pt # Safety belt detection model (YOLOv8)
-
+```
 ---
 
 ## Detection Models
