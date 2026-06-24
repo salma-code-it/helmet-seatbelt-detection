@@ -45,8 +45,8 @@ backend/
 │   └── services/
 │       └── detection.py # YOLOv8 + OpenCV detection logic
 └── models/
-    ├── best_casque.pt   # Helmet detection model
-    └── best_ceinture.pt # Safety belt detection model
+    ├── best_casque.pt   # Helmet detection model (YOLOv8)
+    └── best_ceinture.pt # Safety belt detection model (YOLOv8)
 
 ---
 
